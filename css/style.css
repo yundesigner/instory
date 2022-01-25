@@ -1,0 +1,241 @@
+html,
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: var(--bg-color);
+}
+
+header {
+  width: 100%;
+  height: 86px;
+  border-bottom: 1px solid #b4b4b4;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 86px;
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+}
+
+nav {
+  width: 226px;
+  height: 100%;
+  padding: 27px;
+  background-color: #fff;
+  overflow: hidden;
+  position: fixed;
+}
+
+section {
+  width: fit-content;
+  height: 100%;
+  margin-left: 280px;
+  overflow: scroll;
+}
+
+/* 시멘틱태그 끝 */
+
+.logo {
+  width: 280px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_img {
+  width: 124px;
+  height: 48px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.menu li {
+  margin-right: 80px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.current_page {
+  color: var(--main-color);
+}
+
+/* header 끝 */
+
+.join_nav h2 {
+  font-size: 18px;
+  margin-top: 40px;
+  font-weight: 700;
+}
+
+.join_box {
+  width: 226px;
+  height: 320px;
+  border-radius: 20px;
+  margin-top: 26px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join_img {
+  width: 226px;
+  height: 186px;
+  background-image: url(../img/profile_empty.png);
+  background-position: center center;
+  background-size: 226px;
+}
+
+.join_text {
+  font-size: 14px;
+  margin-top: 26px;
+}
+
+.join_nav_btn {
+  display: flex;
+}
+
+.join_nav_btn div {
+  width: 86px;
+  height: 28px;
+  border: 1px solid #bbb;
+  color: #bbb;
+  border-radius: 14px;
+  margin-top: 22px;
+}
+
+.join_nav_btn div:first-child {
+  margin-right: 10px;
+}
+
+/* nav 끝 */
+
+.join {
+  display: flex;
+  margin-top: 8vh;
+}
+.join_title {
+  width: 758px;
+  height: 578px;
+  margin-left: 130px;
+}
+.join_title h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.join_title h3 {
+  margin-top: 12px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.join_title img {
+  width: 758px;
+}
+.join_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.join_form form > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+.join_form div p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+.join_form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.join_form input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+  width: 210px;
+  height: 20px;
+  padding: 4px 8px 4px 10px;
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+}
+
+.join_form .sex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.join_form .sex label {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.handphone input[type="tel"] {
+  width: 140px;
+  margin-right: 8px;
+}
+.handphone input[type="button"] {
+  width: 62px;
+  height: 28px;
+  border: none;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 6px;
+}
+.info_received p {
+  margin-bottom: 8px;
+}
+.info_received span {
+  font-weight: 500;
+}
+
+.join_submit {
+  width: 186px;
+  height: 28px;
+  padding: 4px 60px;
+  border-radius: 14px;
+  background-image: linear-gradient(99deg, #209cff, #68e0cf);
+  border: none;
+  color: #fff;
+}
+/* content 끝 */
+
+/* ---------------join 끝----------------- */
+
+/* footer */
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #b4b4b4;
+  width: 100%;
+  height: 178px;
+  position: fixed;
+  bottom: 0;
+}
