@@ -22,12 +22,11 @@ header {
 .wrap {
   width: 100%;
   height: 100%;
-  position: fixed;
-  top: 86px;
   display: flex;
   flex-direction: row;
-  overflow-y: scroll;
 }
+
+/* nav_고정 */
 
 nav {
   width: 226px;
@@ -36,17 +35,89 @@ nav {
   background-color: #fff;
   overflow: hidden;
   position: fixed;
+  top: 86px;
 }
+nav h2 {
+  font-size: 18px;
+  margin-top: 40px;
+  font-weight: 700;
+}
+nav .box {
+  width: 226px;
+  height: 320px;
+  border-radius: 20px;
+  margin-top: 26px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box_img {
+  width: 226px;
+  height: 186px;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.box_inner {
+  font-size: 14px;
+  margin-top: 26px;
+}
+
+.box_btn {
+  display: flex;
+}
+
+.box_btn div {
+  width: 86px;
+  height: 28px;
+  border: 1px solid #bbb;
+  color: #bbb;
+  border-radius: 14px;
+  margin-top: 22px;
+}
+
+.box_btn div:first-child {
+  margin-right: 10px;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: 700;
+}
+.nav_btn {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #bbb;
+  width: 226px;
+  height: 44px;
+  margin: 28px 0 18px;
+  padding: 12px auto 12px 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+}
+.nav_btn img {
+  width: 14px;
+  height: 14px;
+  margin-left: 14px;
+  margin-right: 8px;
+}
+/* nav 고정 끝 */
 
 section {
   width: fit-content;
   height: fit-content;
   align-items: center;
   margin-left: 280px;
+  margin-top: 86px;
   overflow: scroll;
 }
 
-/* 시멘틱태그 끝 */
+/* 시멘틱태그(공통태그) 끝 */
 
 .logo {
   width: 280px;
@@ -80,59 +151,15 @@ section {
 
 /* header 끝 */
 
-.join_nav h2 {
-  font-size: 18px;
-  margin-top: 40px;
-  font-weight: 700;
-}
-
-.join_box {
-  width: 226px;
-  height: 320px;
-  border-radius: 20px;
-  margin-top: 26px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .join_img {
-  width: 226px;
-  height: 186px;
   background-image: url(../img/profile_empty.png);
-  background-position: center center;
-  background-size: 226px;
-}
-
-.join_text {
-  font-size: 14px;
-  margin-top: 26px;
-}
-
-.join_nav_btn {
-  display: flex;
-}
-
-.join_nav_btn div {
-  width: 86px;
-  height: 28px;
-  border: 1px solid #bbb;
-  color: #bbb;
-  border-radius: 14px;
-  margin-top: 22px;
-}
-
-.join_nav_btn div:first-child {
-  margin-right: 10px;
 }
 
 /* nav 끝 */
 
 .join {
   display: flex;
-  margin-top: 8vh;
+  margin-top: 16vh;
 }
 .join_title {
   width: 758px;
@@ -153,7 +180,7 @@ section {
 .join_title img {
   width: 758px;
 }
-.join_form {
+.join_form form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,10 +203,10 @@ section {
 }
 
 .join_form input[type="text"],
-input[type="tel"],
-input[type="password"],
-input[type="email"],
-input[type="date"] {
+.join_form input[type="tel"],
+.join_form input[type="password"],
+.join_form input[type="email"],
+.join_form input[type="date"] {
   width: 210px;
   height: 20px;
   padding: 4px 8px 4px 10px;
@@ -188,13 +215,14 @@ input[type="date"] {
   border-radius: 6px;
 }
 
-.join_form .sex {
+.join_form .gender {
+  width: 230px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.join_form .sex label {
+.join_form .gender label {
   margin-bottom: 0;
   font-weight: 500;
 }
@@ -231,9 +259,164 @@ input[type="date"] {
 
 /* ---------------join 끝----------------- */
 
-.login_form {
-  height: fit-content;
+.staff_img {
+  background-image: url(../img/staff_profile.png);
 }
+
+.staff_box .box_inner {
+  margin-top: 12px;
+}
+
+.staff_btn {
+  margin-top: 40px;
+}
+/* staff_nav 끝*/
+.contents {
+  margin: 40px auto 0 30px;
+}
+.content_title {
+  display: flex;
+  font-size: 24px;
+  color: #bbb;
+  font-weight: 700;
+}
+
+.content_title p {
+  margin-right: 32px;
+}
+.content_title .title_focus {
+  color: #000;
+}
+
+.profile {
+  margin-top: 22px;
+  display: flex;
+}
+
+.profile_mainimg {
+  width: 492px;
+  height: 406px;
+  margin-right: 42px;
+  border-radius: 20px;
+  background: url(../img/staff_profile.png) center center no-repeat;
+  background-size: cover;
+}
+
+.profile_name {
+  display: flex;
+}
+.profile_name h1 {
+  font-size: 32px;
+  margin-right: 12px;
+}
+.profile_name .select_wrap {
+  margin-right: 6px;
+}
+.profile_name select {
+  width: 88px;
+  height: 28px;
+}
+
+.profile_form {
+  margin-top: 18px;
+}
+
+.profile_form > div {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.profile_form > div > p,
+.profile_form > div > label {
+  width: 48px;
+  margin-right: 26px;
+  color: #707070;
+}
+.profile_form .select_wrap {
+  margin-right: 8px;
+}
+.profile_form select {
+  width: 68px;
+}
+.profile_form input {
+  width: 360px;
+  height: 20px;
+  padding: 4px 10px;
+}
+.birth_yyyy {
+  width: 86px !important;
+}
+
+.memo {
+  align-items: flex-start !important;
+}
+
+.memo textarea {
+  width: 720px;
+  height: 180px;
+  padding: 4px 10px;
+  margin-top: 22px;
+}
+/* profile_top 끝 */
+.works {
+  overflow: hidden;
+  height: 232px;
+  display: flex;
+  margin-top: 22px;
+}
+.works_slide {
+  display: flex;
+}
+.add_work,
+.mywork {
+  width: 355px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  margin-right: 22px;
+}
+.add_work {
+  flex-direction: column;
+}
+
+.add_work p {
+  margin-top: 8px;
+  color: var(--main-color);
+}
+/* profile_works 끝 */
+.filmography {
+  margin-top: 96px;
+}
+.filmography input {
+  height: 28px;
+}
+
+.filmo_title h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 16px;
+}
+
+.filmo_form_title {
+  margin: 22px auto 16px;
+}
+.filmo {
+  display: flex;
+  flex-direction: column;
+}
+.filmo_submit {
+  width: 162px;
+  height: 36px;
+  padding: 8px 14px;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  margin: 24px auto;
+}
+/* ------------staff profile 끝 ------------ */
 
 /* footer */
 

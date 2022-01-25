@@ -8,7 +8,27 @@
   align-items: center;
   justify-content: center;
 }
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.scroll {
+  min-height: 120%;
+}
+input,
+textarea {
+  border-radius: 6px;
+  border: solid 1px #6dc4e2;
+  background-color: #fff;
+}
+textarea:focus {
+  outline: none;
+}
 
+textarea {
+  resize: none;
+}
 input[type="radio"] {
   -webkit-appearance: none;
   width: 16px;
@@ -65,4 +85,40 @@ input[type="checkbox"]:checked + label {
 .form_row {
   display: flex;
   flex-direction: row;
+}
+.select_wrap {
+  border-radius: 6px;
+  border: solid 1px #6dc4e2;
+  background-color: #fff;
+}
+select {
+  padding: 0 10px 0 12px;
+  height: 28px;
+  border: none;
+  -webkit-appearance: none; /* for chrome */
+  -moz-appearance: none; /*for firefox*/
+  appearance: none;
+  background: url("../img/arrow_down.png") no-repeat 90% 50%/8px auto;
+  font-weight: 700;
+  font-size: 14px;
+}
+select::-ms-expand {
+  display: none; /*for IE10,11*/
+}
+select:focus {
+  outline: none;
+  font-weight: 700;
+}
+
+.add_btn {
+  width: 36px;
+  height: 36px;
+  background: url(../img/add_btn.png) no-repeat center center / cover;
+}
+
+.delete {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: url(../img/delete.png) no-repeat center center / cover;
 }

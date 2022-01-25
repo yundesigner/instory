@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css?new" />
+    <link rel="stylesheet" href="css/app.css?new" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>instory</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="logoimage" class="logo_img" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li>공지사항</li>
+          <li>커뮤니티</li>
+          <li>스태프</li>
+          <li>연기자</li>
+          <li class="current_page">마이페이지</li>
+          <a href="login.html"> <li>로그인 또는 회원가입</li></a>
+        </ul>
+      </div>
+    </header>
+    <!-- header 끝  -->
+    <div class="wrap">
+      <nav class="profile_nav">
+        <h2>반갑습니다! <span class="username">지성원</span>님</h2>
+        <div class="box staff_box">
+          <div class="box_img staff_img"></div>
+          <div class="box_inner">
+            <p class="username">지성원</p>
+            <div class="box_btn staff_btn">
+              <a href="#"><div class="flex_c">마이페이지</div></a>
+              <a href="login.html"><div class="flex_c">로그아웃</div></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav_btn">
+          <img src="img/icon_alarm.png" alt="alarm" />
+          <p>알림</p>
+        </div>
+        <div class="nav_btn">
+          <img src="img/icon_chat.png" alt="chat" />
+          <p>채팅</p>
+        </div>
+        <div class="nav_btn">
+          <img src="img/icon_bookmark.png" alt="bookmark" />
+          <p>북마크</p>
+        </div>
+      </nav>
+      <!-- nav 끝 -->
+
+      <section class="scroll">
+        <div class="contents">
+          <div class="content_title">
+            <p>스태프 모집</p>
+            <p class="title_focus">스태프 프로필</p>
+          </div>
+          <!-- content_ title -->
+          <div class="profile">
+            <div class="profile_mainimg"></div>
+
+            <div class="profile_info">
+              <div class="profile_name">
+                <h1 class="username">지성원</h1>
+                <div class="select_wrap">
+                  <select name="select1" id="">
+                    <option value="">선택</option>
+                    <option value="record">촬영</option>
+                  </select>
+                </div>
+                <div class="select_wrap">
+                  <select name="" id="category">
+                    <option value="">구분</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="profile_form">
+                <div class="age">
+                  <p>나이</p>
+                  <div class="select_wrap">
+                    <select
+                      name="year"
+                      id="birth_yyyy"
+                      class="birth_yyyy"
+                    ></select>
+                  </div>
+                  <div class="select_wrap">
+                    <select name="month" id="birth_mm"></select>
+                  </div>
+                  <div class="select_wrap">
+                    <select name="day" id="birth_dd"></select>
+                  </div>
+                  출생 <span>(00살)</span>
+                </div>
+                <div class="gender">
+                  <label for="gender">성별</label>
+                  <div class="select_wrap">
+                    <select name="" id="gender">
+                      <option value="male">남자</option>
+                      <option value="female">여자</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="email">
+                  <label for="email">이메일</label>
+                  <input type="email" id="email" />
+                </div>
+                <div class="memo">
+                  <p>소개글</p>
+                  <textarea name="" id="memo" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- top_profile -->
+
+          <div class="works">
+            <div class="add_work flex_c">
+              <div class="add_btn"></div>
+              <p>이미지 또는 영상 추가하기</p>
+            </div>
+            <div class="works_slide">
+              <div class="mywork">
+                <div class="media"></div>
+                <p class="work_title"></p>
+              </div>
+              <div class="mywork">
+                <div class="media"></div>
+                <p class="work_title"></p>
+              </div>
+              <div class="mywork">
+                <div class="media"></div>
+                <p class="work_title"></p>
+              </div>
+            </div>
+          </div>
+          <!-- works 끝 -->
+
+          <div class="filmography">
+            <div class="filmo_title flex_row">
+              <h1>필모그래피</h1>
+              <div class="add_btn"></div>
+            </div>
+
+            <div class="filmo_form_title">
+              <ul class="flex_row">
+                <li>년도▾</li>
+                <li>구분▾</li>
+                <li>작품명</li>
+                <li>연출</li>
+                <li>역할▾</li>
+                <li>역할명</li>
+              </ul>
+            </div>
+
+            <form action="" class="filmo">
+              <div class="filmo_form">
+                <ul class="flex_row">
+                  <li>
+                    <div class="select_wrap year">
+                      <select name="year" id="year" class="year">
+                        <option value="">년도선택</option>
+                        <option value="1">1998</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select_wrap class">
+                      <select name="select1" id="class" class="class">
+                        <option value="">선택</option>
+                        <option value="1">장편상업</option>
+                        <option value="2">장편독립</option>
+                        <option value="3">단편영화</option>
+                        <option value="4">TV시리즈</option>
+                        <option value="5">OTT</option>
+                        <option value="6">웹드라마</option>
+                        <option value="7">광고</option>
+                        <option value="8">홍보</option>
+                        <option value="9">뮤직비디오</option>
+                        <option value="10">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name=""
+                      id="films_name"
+                      class="films_name"
+                    />
+                  </li>
+                  <li>
+                    <input type="text" name="" id="director" class="director" />
+                  </li>
+                  <li>
+                    <div class="select_wrap role">
+                      <select name="select1" id="role">
+                        <option value="">선택</option>
+                        <option value="1">연출</option>
+                        <option value="2">제작</option>
+                        <option value="3">촬영</option>
+                        <option value="4">조명</option>
+                        <option value="5">동시녹음</option>
+                        <option value="6">편집</option>
+                        <option value="7">미술</option>
+                        <option value="8">소품</option>
+                        <option value="9">의상</option>
+                        <option value="10">분장</option>
+                        <option value="11">특수분장</option>
+                        <option value="12">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name=""
+                      id="role_title"
+                      class="role_title"
+                    />
+                  </li>
+                  <li>
+                    <button class="delete"></button>
+                  </li>
+                </ul>
+              </div>
+              <input
+                type="submit"
+                class="filmo_submit"
+                value="프로필 업로드하기"
+              />
+            </form>
+          </div>
+          <!-- filmography 끝 -->
+        </div>
+        <!-- contents -->
+      </section>
+      <!-- content 끝 -->
+    </div>
+
+    <footer>
+      <div class="footer_inner">
+        <div class="clause">
+          <p>가입약관</p>
+          <p>개인정보보호방침</p>
+        </div>
+        <div class="footer_info">
+          <p>Location. 부산광역시 동래구 xxxx</p>
+          <p>Tel.051-000-0000</p>
+        </div>
+        <div class="copyright">
+          Copyright by 2021 instory. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

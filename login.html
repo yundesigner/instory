@@ -25,7 +25,9 @@
           <li>스태프</li>
           <li>연기자</li>
           <li>마이페이지</li>
-          <li class="current_page">로그인 또는 회원가입</li>
+          <a href="login.html">
+            <li class="current_page">로그인 또는 회원가입</li></a
+          >
         </ul>
       </div>
     </header>
@@ -33,11 +35,11 @@
     <div class="wrap">
       <nav class="join_nav">
         <h2>로그인 또는 회원가입</h2>
-        <div class="join_box">
-          <div class="join_img"></div>
-          <div class="join_text">
+        <div class="box join_box">
+          <div class="box_img join_img"></div>
+          <div class="box_inner">
             <p>로그인 또는 회원가입하여 <br />인스토리를 이용하세요.</p>
-            <div class="join_nav_btn">
+            <div class="box_btn">
               <a href="login.html"><div class="flex_c">로그인</div></a>
               <a href="join.html"><div class="flex_c">회원가입</div></a>
             </div>
@@ -63,8 +65,8 @@
               <label for="비밀번호" id="password">비밀번호</label>
               <input type="password" id="password" />
             </div>
+            <input type="submit" value="로그인" class="join_submit" />
           </form>
-          <input type="submit" value="회원가입" class="join_submit" />
         </div>
       </section>
       <!-- content 끝 -->
