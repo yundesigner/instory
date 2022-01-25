@@ -40,7 +40,8 @@ nav {
 
 section {
   width: fit-content;
-  height: 100%;
+  height: fit-content;
+  align-items: center;
   margin-left: 280px;
   overflow: scroll;
 }
@@ -137,6 +138,7 @@ section {
   width: 758px;
   height: 578px;
   margin-left: 130px;
+  margin-right: 66px;
 }
 .join_title h1 {
   font-size: 48px;
@@ -229,6 +231,10 @@ input[type="date"] {
 
 /* ---------------join 끝----------------- */
 
+.login_form {
+  height: fit-content;
+}
+
 /* footer */
 
 footer {
@@ -238,4 +244,17 @@ footer {
   height: 178px;
   position: fixed;
   bottom: 0;
+}
+
+.footer_inner {
+  margin: 40px 0 0 310px;
+}
+
+.footer_inner div {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.footer_inner div p {
+  margin-right: 48px;
 }
