@@ -38,7 +38,7 @@
     <div class="wrap">
       <nav class="profile_nav">
         <h2>반갑습니다! <span class="username">서윤영</span>님</h2>
-        <div class="box staff_box">
+        <div class="box profile_box">
           <div class="box_img actor_img"></div>
           <div class="box_inner">
             <p class="username">서윤영</p>
@@ -64,7 +64,7 @@
       </nav>
       <!-- nav 끝 -->
 
-      <section class="scroll">
+      <section>
         <div class="contents">
           <div class="content_title">
             <p>연기자 모집</p>
@@ -148,6 +148,11 @@
                     </div>
                   </div>
                 </div>
+                <div class="weight">
+                  <label for="weight">체중</label>
+                  <input type="weight" id="weight" />
+                  <p>&nbsp;Kg</p>
+                </div>
                 <div class="email">
                   <label for="email">이메일</label>
                   <input type="email" id="email" />
@@ -216,6 +221,550 @@
             </div>
 
             <form action="" class="filmo">
+              <div class="filmo_form">
+                <ul class="flex_row">
+                  <li>
+                    <div class="select_wrap year">
+                      <select name="year" id="year" class="year">
+                        <option value="">년도</option>
+                        <option value="1">1998</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select_wrap class">
+                      <select name="select1" id="class" class="class">
+                        <option value="">선택</option>
+                        <option value="1">장편상업</option>
+                        <option value="2">장편독립</option>
+                        <option value="3">단편영화</option>
+                        <option value="4">TV시리즈</option>
+                        <option value="5">OTT</option>
+                        <option value="6">웹드라마</option>
+                        <option value="7">광고</option>
+                        <option value="8">홍보</option>
+                        <option value="9">뮤직비디오</option>
+                        <option value="10">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name=""
+                      id="films_name"
+                      class="films_name"
+                    />
+                  </li>
+                  <li>
+                    <input type="text" name="" id="director" class="director" />
+                  </li>
+                  <li>
+                    <div class="select_wrap role">
+                      <select name="select1" id="role">
+                        <option value="">선택</option>
+                        <option value="1">연출</option>
+                        <option value="2">제작</option>
+                        <option value="3">촬영</option>
+                        <option value="4">조명</option>
+                        <option value="5">동시녹음</option>
+                        <option value="6">편집</option>
+                        <option value="7">미술</option>
+                        <option value="8">소품</option>
+                        <option value="9">의상</option>
+                        <option value="10">분장</option>
+                        <option value="11">특수분장</option>
+                        <option value="12">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="flex_row">
+                    <input
+                      type="text"
+                      name=""
+                      id="role_title"
+                      class="role_title"
+                    />
+                    <button class="delete"></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="filmo_form">
+                <ul class="flex_row">
+                  <li>
+                    <div class="select_wrap year">
+                      <select name="year" id="year" class="year">
+                        <option value="">년도</option>
+                        <option value="1">1998</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select_wrap class">
+                      <select name="select1" id="class" class="class">
+                        <option value="">선택</option>
+                        <option value="1">장편상업</option>
+                        <option value="2">장편독립</option>
+                        <option value="3">단편영화</option>
+                        <option value="4">TV시리즈</option>
+                        <option value="5">OTT</option>
+                        <option value="6">웹드라마</option>
+                        <option value="7">광고</option>
+                        <option value="8">홍보</option>
+                        <option value="9">뮤직비디오</option>
+                        <option value="10">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name=""
+                      id="films_name"
+                      class="films_name"
+                    />
+                  </li>
+                  <li>
+                    <input type="text" name="" id="director" class="director" />
+                  </li>
+                  <li>
+                    <div class="select_wrap role">
+                      <select name="select1" id="role">
+                        <option value="">선택</option>
+                        <option value="1">연출</option>
+                        <option value="2">제작</option>
+                        <option value="3">촬영</option>
+                        <option value="4">조명</option>
+                        <option value="5">동시녹음</option>
+                        <option value="6">편집</option>
+                        <option value="7">미술</option>
+                        <option value="8">소품</option>
+                        <option value="9">의상</option>
+                        <option value="10">분장</option>
+                        <option value="11">특수분장</option>
+                        <option value="12">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="flex_row">
+                    <input
+                      type="text"
+                      name=""
+                      id="role_title"
+                      class="role_title"
+                    />
+                    <button class="delete"></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="filmo_form">
+                <ul class="flex_row">
+                  <li>
+                    <div class="select_wrap year">
+                      <select name="year" id="year" class="year">
+                        <option value="">년도</option>
+                        <option value="1">1998</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select_wrap class">
+                      <select name="select1" id="class" class="class">
+                        <option value="">선택</option>
+                        <option value="1">장편상업</option>
+                        <option value="2">장편독립</option>
+                        <option value="3">단편영화</option>
+                        <option value="4">TV시리즈</option>
+                        <option value="5">OTT</option>
+                        <option value="6">웹드라마</option>
+                        <option value="7">광고</option>
+                        <option value="8">홍보</option>
+                        <option value="9">뮤직비디오</option>
+                        <option value="10">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name=""
+                      id="films_name"
+                      class="films_name"
+                    />
+                  </li>
+                  <li>
+                    <input type="text" name="" id="director" class="director" />
+                  </li>
+                  <li>
+                    <div class="select_wrap role">
+                      <select name="select1" id="role">
+                        <option value="">선택</option>
+                        <option value="1">연출</option>
+                        <option value="2">제작</option>
+                        <option value="3">촬영</option>
+                        <option value="4">조명</option>
+                        <option value="5">동시녹음</option>
+                        <option value="6">편집</option>
+                        <option value="7">미술</option>
+                        <option value="8">소품</option>
+                        <option value="9">의상</option>
+                        <option value="10">분장</option>
+                        <option value="11">특수분장</option>
+                        <option value="12">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="flex_row">
+                    <input
+                      type="text"
+                      name=""
+                      id="role_title"
+                      class="role_title"
+                    />
+                    <button class="delete"></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="filmo_form">
+                <ul class="flex_row">
+                  <li>
+                    <div class="select_wrap year">
+                      <select name="year" id="year" class="year">
+                        <option value="">년도</option>
+                        <option value="1">1998</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select_wrap class">
+                      <select name="select1" id="class" class="class">
+                        <option value="">선택</option>
+                        <option value="1">장편상업</option>
+                        <option value="2">장편독립</option>
+                        <option value="3">단편영화</option>
+                        <option value="4">TV시리즈</option>
+                        <option value="5">OTT</option>
+                        <option value="6">웹드라마</option>
+                        <option value="7">광고</option>
+                        <option value="8">홍보</option>
+                        <option value="9">뮤직비디오</option>
+                        <option value="10">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name=""
+                      id="films_name"
+                      class="films_name"
+                    />
+                  </li>
+                  <li>
+                    <input type="text" name="" id="director" class="director" />
+                  </li>
+                  <li>
+                    <div class="select_wrap role">
+                      <select name="select1" id="role">
+                        <option value="">선택</option>
+                        <option value="1">연출</option>
+                        <option value="2">제작</option>
+                        <option value="3">촬영</option>
+                        <option value="4">조명</option>
+                        <option value="5">동시녹음</option>
+                        <option value="6">편집</option>
+                        <option value="7">미술</option>
+                        <option value="8">소품</option>
+                        <option value="9">의상</option>
+                        <option value="10">분장</option>
+                        <option value="11">특수분장</option>
+                        <option value="12">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="flex_row">
+                    <input
+                      type="text"
+                      name=""
+                      id="role_title"
+                      class="role_title"
+                    />
+                    <button class="delete"></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="filmo_form">
+                <ul class="flex_row">
+                  <li>
+                    <div class="select_wrap year">
+                      <select name="year" id="year" class="year">
+                        <option value="">년도</option>
+                        <option value="1">1998</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select_wrap class">
+                      <select name="select1" id="class" class="class">
+                        <option value="">선택</option>
+                        <option value="1">장편상업</option>
+                        <option value="2">장편독립</option>
+                        <option value="3">단편영화</option>
+                        <option value="4">TV시리즈</option>
+                        <option value="5">OTT</option>
+                        <option value="6">웹드라마</option>
+                        <option value="7">광고</option>
+                        <option value="8">홍보</option>
+                        <option value="9">뮤직비디오</option>
+                        <option value="10">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name=""
+                      id="films_name"
+                      class="films_name"
+                    />
+                  </li>
+                  <li>
+                    <input type="text" name="" id="director" class="director" />
+                  </li>
+                  <li>
+                    <div class="select_wrap role">
+                      <select name="select1" id="role">
+                        <option value="">선택</option>
+                        <option value="1">연출</option>
+                        <option value="2">제작</option>
+                        <option value="3">촬영</option>
+                        <option value="4">조명</option>
+                        <option value="5">동시녹음</option>
+                        <option value="6">편집</option>
+                        <option value="7">미술</option>
+                        <option value="8">소품</option>
+                        <option value="9">의상</option>
+                        <option value="10">분장</option>
+                        <option value="11">특수분장</option>
+                        <option value="12">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="flex_row">
+                    <input
+                      type="text"
+                      name=""
+                      id="role_title"
+                      class="role_title"
+                    />
+                    <button class="delete"></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="filmo_form">
+                <ul class="flex_row">
+                  <li>
+                    <div class="select_wrap year">
+                      <select name="year" id="year" class="year">
+                        <option value="">년도</option>
+                        <option value="1">1998</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select_wrap class">
+                      <select name="select1" id="class" class="class">
+                        <option value="">선택</option>
+                        <option value="1">장편상업</option>
+                        <option value="2">장편독립</option>
+                        <option value="3">단편영화</option>
+                        <option value="4">TV시리즈</option>
+                        <option value="5">OTT</option>
+                        <option value="6">웹드라마</option>
+                        <option value="7">광고</option>
+                        <option value="8">홍보</option>
+                        <option value="9">뮤직비디오</option>
+                        <option value="10">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name=""
+                      id="films_name"
+                      class="films_name"
+                    />
+                  </li>
+                  <li>
+                    <input type="text" name="" id="director" class="director" />
+                  </li>
+                  <li>
+                    <div class="select_wrap role">
+                      <select name="select1" id="role">
+                        <option value="">선택</option>
+                        <option value="1">연출</option>
+                        <option value="2">제작</option>
+                        <option value="3">촬영</option>
+                        <option value="4">조명</option>
+                        <option value="5">동시녹음</option>
+                        <option value="6">편집</option>
+                        <option value="7">미술</option>
+                        <option value="8">소품</option>
+                        <option value="9">의상</option>
+                        <option value="10">분장</option>
+                        <option value="11">특수분장</option>
+                        <option value="12">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="flex_row">
+                    <input
+                      type="text"
+                      name=""
+                      id="role_title"
+                      class="role_title"
+                    />
+                    <button class="delete"></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="filmo_form">
+                <ul class="flex_row">
+                  <li>
+                    <div class="select_wrap year">
+                      <select name="year" id="year" class="year">
+                        <option value="">년도</option>
+                        <option value="1">1998</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select_wrap class">
+                      <select name="select1" id="class" class="class">
+                        <option value="">선택</option>
+                        <option value="1">장편상업</option>
+                        <option value="2">장편독립</option>
+                        <option value="3">단편영화</option>
+                        <option value="4">TV시리즈</option>
+                        <option value="5">OTT</option>
+                        <option value="6">웹드라마</option>
+                        <option value="7">광고</option>
+                        <option value="8">홍보</option>
+                        <option value="9">뮤직비디오</option>
+                        <option value="10">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name=""
+                      id="films_name"
+                      class="films_name"
+                    />
+                  </li>
+                  <li>
+                    <input type="text" name="" id="director" class="director" />
+                  </li>
+                  <li>
+                    <div class="select_wrap role">
+                      <select name="select1" id="role">
+                        <option value="">선택</option>
+                        <option value="1">연출</option>
+                        <option value="2">제작</option>
+                        <option value="3">촬영</option>
+                        <option value="4">조명</option>
+                        <option value="5">동시녹음</option>
+                        <option value="6">편집</option>
+                        <option value="7">미술</option>
+                        <option value="8">소품</option>
+                        <option value="9">의상</option>
+                        <option value="10">분장</option>
+                        <option value="11">특수분장</option>
+                        <option value="12">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="flex_row">
+                    <input
+                      type="text"
+                      name=""
+                      id="role_title"
+                      class="role_title"
+                    />
+                    <button class="delete"></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="filmo_form">
+                <ul class="flex_row">
+                  <li>
+                    <div class="select_wrap year">
+                      <select name="year" id="year" class="year">
+                        <option value="">년도</option>
+                        <option value="1">1998</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select_wrap class">
+                      <select name="select1" id="class" class="class">
+                        <option value="">선택</option>
+                        <option value="1">장편상업</option>
+                        <option value="2">장편독립</option>
+                        <option value="3">단편영화</option>
+                        <option value="4">TV시리즈</option>
+                        <option value="5">OTT</option>
+                        <option value="6">웹드라마</option>
+                        <option value="7">광고</option>
+                        <option value="8">홍보</option>
+                        <option value="9">뮤직비디오</option>
+                        <option value="10">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name=""
+                      id="films_name"
+                      class="films_name"
+                    />
+                  </li>
+                  <li>
+                    <input type="text" name="" id="director" class="director" />
+                  </li>
+                  <li>
+                    <div class="select_wrap role">
+                      <select name="select1" id="role">
+                        <option value="">선택</option>
+                        <option value="1">연출</option>
+                        <option value="2">제작</option>
+                        <option value="3">촬영</option>
+                        <option value="4">조명</option>
+                        <option value="5">동시녹음</option>
+                        <option value="6">편집</option>
+                        <option value="7">미술</option>
+                        <option value="8">소품</option>
+                        <option value="9">의상</option>
+                        <option value="10">분장</option>
+                        <option value="11">특수분장</option>
+                        <option value="12">기타</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="flex_row">
+                    <input
+                      type="text"
+                      name=""
+                      id="role_title"
+                      class="role_title"
+                    />
+                    <button class="delete"></button>
+                  </li>
+                </ul>
+              </div>
               <div class="filmo_form">
                 <ul class="flex_row">
                   <li>

@@ -16,7 +16,7 @@ header {
   flex-direction: row;
   align-items: center;
   position: fixed;
-  z-index: 1;
+  z-index: 11;
 }
 
 .wrap {
@@ -63,7 +63,6 @@ nav .box {
 
 .box_inner {
   font-size: 14px;
-  margin-top: 26px;
 }
 
 .box_btn {
@@ -115,6 +114,7 @@ section {
   margin-left: 280px;
   margin-top: 86px;
   overflow: scroll;
+  padding-bottom: 200px;
 }
 
 /* 시멘틱태그(공통태그) 끝 */
@@ -161,6 +161,11 @@ section {
   display: flex;
   margin-top: 16vh;
 }
+
+.join_box .box_inner {
+  margin-top: 26px;
+}
+
 .join_title {
   width: 758px;
   height: 578px;
@@ -259,11 +264,110 @@ section {
 
 /* ---------------join 끝----------------- */
 
-.staff_img {
-  background-image: url(../img/staff_profile.png);
+.profile_img {
+  background: url(../img/profile.png) center center no-repeat;
+  background-size: cover;
 }
 
-.staff_box .box_inner {
+.mypage {
+  width: 100%;
+}
+.mypage h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.user_information {
+  width: 90%;
+  max-width: 1024px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  padding: 12px 20px;
+  margin: 44px 0;
+}
+
+.user_information > div {
+  align-items: flex-start !important;
+  margin-top: 22px;
+}
+.mypage_profile {
+  flex-direction: column;
+}
+.profile_myimg {
+  width: 226px;
+  height: 186px;
+  border-radius: 20px;
+}
+
+.profile_btn {
+  width: fit-content;
+  height: 20px;
+  padding: 2px 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 400;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.user_info_content {
+  margin-left: 40px;
+}
+
+.user_info_content ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.user_title {
+  width: 46px;
+  color: var(--gray-color);
+  font-weight: 700;
+  margin-right: 40px;
+}
+.btn_wrap {
+  width: fit-content;
+  margin-left: auto;
+  margin-top: auto;
+}
+.btn_wrap .profile_btn {
+  margin-right: 16px;
+}
+.profile_btn.quit {
+  background-color: var(--gray-color);
+}
+
+.personal_profile {
+  margin-top: 44px;
+}
+
+.personal_profile > div {
+  width: 226px;
+  height: 240px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  margin-right: 40px;
+}
+
+.personal_profile p {
+  width: 355px;
+  margin-top: 8px;
+  color: var(--main-color);
+  text-align: center;
+}
+
+/* ---------------mypage 끝----------------- */
+.staff_img {
+  background: url(../img/staff_profile.png) center center no-repeat;
+  background-size: cover;
+}
+
+.profile_box .box_inner {
   margin-top: 12px;
 }
 
@@ -333,7 +437,7 @@ section {
 .profile_form > div > label {
   width: 48px;
   margin-right: 26px;
-  color: #707070;
+  color: var(--gray-color);
 }
 .profile_form .select_wrap {
   margin-right: 8px;
@@ -513,18 +617,22 @@ element.style {
 
 /* filmo_form input/select css 시작  */
 
-.filmo_form ul li div,
-.filmo_form ul li div select {
-  width: 90%;
+.filmo_form ul li div {
+  width: 50%;
 }
-.director,
+.filmo_form ul li div select {
+  width: 100%;
+}
+.role {
+  margin-left: 8px;
+}
 .role_title {
   width: 90%;
 }
 .films_name {
   width: 95%;
 }
-
+/* filmo_form input/select css 끝  */
 /* ------------staff profile 끝 ------------ */
 
 .actor_img {
@@ -561,16 +669,17 @@ element.style {
 .actor_form p {
   width: 48px;
   margin-right: 26px;
-  color: #707070;
+  color: var(--gray-color);
 }
 
 .form_mid label,
 .form_mid p,
 .form_right label,
-.form_right p {
+.form_right p,
+.weight input {
   width: 80px;
 }
-
+/* ------------actor profile 끝 ------------  */
 /* footer */
 
 footer {
