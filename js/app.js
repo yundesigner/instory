@@ -26,3 +26,13 @@ $(document).ready(function () {
   $("#birth_mm  > option[value=" + mon + "]").attr("selected", "true");
   $("#birth_day  > option[value=" + day + "]").attr("selected", "true");
 });
+
+// staff slide
+var swiper = new Swiper(".mySwiper", {
+  watchSlidesProgress: true,
+  slidesPerView: 3,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

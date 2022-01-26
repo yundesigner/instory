@@ -304,6 +304,7 @@ section {
 
 .profile_name {
   display: flex;
+  align-items: center;
 }
 .profile_name h1 {
   font-size: 32px;
@@ -357,21 +358,18 @@ section {
   width: 720px;
   height: 180px;
   padding: 4px 10px;
-  margin-top: 22px;
 }
 /* profile_top 끝 */
 .works {
   overflow: hidden;
   height: 232px;
-  display: flex;
   margin-top: 22px;
-}
-.works_slide {
   display: flex;
+  flex-direction: row;
 }
-.add_work,
-.mywork {
-  width: 355px;
+
+.add_work {
+  width: 355px !important;
   height: 200px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
@@ -383,8 +381,66 @@ section {
 }
 
 .add_work p {
+  width: 355px;
   margin-top: 8px;
   color: var(--main-color);
+  text-align: center;
+}
+.work_slide {
+  display: flex;
+}
+
+.mywork {
+  margin-right: 22px;
+  display: flex;
+  flex-direction: column;
+}
+.mywork .media {
+  width: 355px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 12px;
+}
+
+.media1 {
+  background: url(../img/staff_1.png) center center no-repeat;
+}
+
+.media2 {
+  background: url(../img/staff_2.png) center center no-repeat;
+}
+.media3 {
+  background: url(../img/staff_3.png) center center no-repeat;
+}
+.media4 {
+  background: url(../img/staff_4.png) center center no-repeat;
+}
+.media5 {
+  background: url(../img/staff_5.png) center center no-repeat;
+}
+.media6 {
+  background: url(../img/staff_6.png) center center no-repeat;
+}
+.mywork p {
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+element.style {
+  width: 447.714 px;
+}
+
+.swiper-slide {
+  flex-shrink: unset !important;
+}
+.swiper-button-next {
+  width: 50px !important;
+  height: 50px !important;
+  background: url(../img/next_arrow.png) center center no-repeat;
+}
+.swiper-button-next::after {
+  content: unset !important;
 }
 /* profile_works 끝 */
 .filmography {
@@ -429,6 +485,7 @@ section {
   margin-bottom: 16px;
 }
 .filmo_form ul {
+  width: 98%;
   height: 28px;
   padding: 10px 0;
   border-radius: 20px;
@@ -469,6 +526,50 @@ section {
 }
 
 /* ------------staff profile 끝 ------------ */
+
+.actor_img {
+  background-image: url(../img/actor_profile.png);
+}
+.usercareer {
+  font-size: 24px;
+  font-weight: 700;
+}
+.actor_form {
+  width: 100%;
+  align-items: flex-start !important;
+  margin-bottom: 0px !important;
+}
+.form_left,
+.form_mid,
+.form_right {
+  display: flex;
+  flex-direction: column;
+  margin-right: 36px;
+}
+
+.actor_form > div > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.actor_form input {
+  width: 72px;
+}
+
+.actor_form label,
+.actor_form p {
+  width: 48px;
+  margin-right: 26px;
+  color: #707070;
+}
+
+.form_mid label,
+.form_mid p,
+.form_right label,
+.form_right p {
+  width: 80px;
+}
 
 /* footer */
 

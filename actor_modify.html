@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <title>instory</title>
   </head>
   <body>
@@ -32,11 +37,11 @@
     <!-- header 끝  -->
     <div class="wrap">
       <nav class="profile_nav">
-        <h2>반갑습니다! <span class="username">지성원</span>님</h2>
+        <h2>반갑습니다! <span class="username">서윤영</span>님</h2>
         <div class="box staff_box">
-          <div class="box_img staff_img"></div>
+          <div class="box_img actor_img"></div>
           <div class="box_inner">
-            <p class="username">지성원</p>
+            <p class="username">서윤영</p>
             <div class="box_btn staff_btn">
               <a href="#"><div class="flex_c">마이페이지</div></a>
               <a href="login.html"><div class="flex_c">로그아웃</div></a>
@@ -62,54 +67,85 @@
       <section class="scroll">
         <div class="contents">
           <div class="content_title">
-            <p>스태프 모집</p>
-            <p class="title_focus">스태프 프로필</p>
+            <p>연기자 모집</p>
+            <p class="title_focus">연기자 프로필</p>
           </div>
           <!-- content_ title -->
           <div class="profile">
-            <div class="profile_mainimg"></div>
+            <div class="profile_mainimg actor_img"></div>
 
             <div class="profile_info">
               <div class="profile_name">
-                <h1 class="username">지성원</h1>
-                <div class="select_wrap">
-                  <select name="select1" id="">
-                    <option value="">선택</option>
-                    <option value="record">촬영</option>
-                  </select>
-                </div>
-                <div class="select_wrap">
-                  <select name="" id="category">
-                    <option value="">구분</option>
-                  </select>
-                </div>
+                <h1 class="username">서윤영</h1>
+                <h2 class="usercareer">배우</h2>
               </div>
 
               <div class="profile_form">
-                <div class="age">
-                  <p>나이</p>
-                  <div class="select_wrap">
-                    <select
-                      name="year"
-                      id="birth_yyyy"
-                      class="birth_yyyy"
-                    ></select>
+                <div class="actor_form flex_row">
+                  <div class="form_left">
+                    <div class="age">
+                      <p>나이</p>
+                      <div class="select_wrap">
+                        <select
+                          name="year"
+                          id="birth_yyyy"
+                          class="birth_yyyy"
+                        ></select>
+                      </div>
+                      <div class="select_wrap">
+                        <select name="month" id="birth_mm"></select>
+                      </div>
+                      <div class="select_wrap">
+                        <select name="day" id="birth_dd"></select>
+                      </div>
+                      출생 <span>(00살)</span>
+                    </div>
+                    <div class="gender">
+                      <label for="gender">성별</label>
+                      <div class="select_wrap">
+                        <select name="" id="gender">
+                          <option value="male">남자</option>
+                          <option value="female">여자</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="height">
+                      <label for="height">신장</label>
+                      <input type="text" id="height" />
+                      <p>&nbsp;cm</p>
+                    </div>
                   </div>
-                  <div class="select_wrap">
-                    <select name="month" id="birth_mm"></select>
+
+                  <div class="form_mid">
+                    <div class="top_clothes_size">
+                      <label for="top_clothes_size">상의사이즈</label>
+                      <input type="text" id="top_clothes_size" />
+                    </div>
+                    <div class="school">
+                      <label for="school">학교</label>
+                      <input type="text" id="school" />
+                    </div>
+                    <div class="school_status">
+                      <p>재학상태</p>
+                      <div class="select_wrap">
+                        <select name="" id="school_status">
+                          <option value="">선택</option>
+                          <option value="ing">재학</option>
+                          <option value="graduation">졸업</option>
+                          <option value="drop">중퇴</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
-                  <div class="select_wrap">
-                    <select name="day" id="birth_dd"></select>
-                  </div>
-                  출생 <span>(00살)</span>
-                </div>
-                <div class="gender">
-                  <label for="gender">성별</label>
-                  <div class="select_wrap">
-                    <select name="" id="gender">
-                      <option value="male">남자</option>
-                      <option value="female">여자</option>
-                    </select>
+                  <div class="form_right">
+                    <div class="bottom_clothes_size">
+                      <label for="bottom_clothes_size">하의사이즈</label>
+                      <input type="text" id="bottom_clothes_size" />
+                    </div>
+                    <div class="major">
+                      <label for="major">학과</label>
+                      <input type="text" id="major" />
+                    </div>
                   </div>
                 </div>
                 <div class="email">
@@ -130,19 +166,34 @@
               <div class="add_btn"></div>
               <p>이미지 또는 영상 추가하기</p>
             </div>
-            <div class="works_slide">
-              <div class="mywork">
-                <div class="media"></div>
-                <p class="work_title"></p>
+            <div class="works_slide mySwiper swiper">
+              <div class="swiper-wrapper">
+                <div class="mywork swiper-slide">
+                  <div class="media media1"></div>
+                  <p class="work_title">Showreel 2021</p>
+                </div>
+                <div class="mywork swiper-slide">
+                  <div class="media media2"></div>
+                  <p class="work_title">단편영화 레일</p>
+                </div>
+                <div class="mywork swiper-slide">
+                  <div class="media media3"></div>
+                  <p class="work_title">오리엔탈바닐라 선크림 CF</p>
+                </div>
+                <div class="mywork swiper-slide">
+                  <div class="media media4"></div>
+                  <p class="work_title">오리엔탈바닐라 선크림 CF</p>
+                </div>
+                <div class="mywork swiper-slide">
+                  <div class="media media5"></div>
+                  <p class="work_title">오리엔탈바닐라 선크림 CF</p>
+                </div>
+                <div class="mywork swiper-slide">
+                  <div class="media media6"></div>
+                  <p class="work_title">오리엔탈바닐라 선크림 CF</p>
+                </div>
               </div>
-              <div class="mywork">
-                <div class="media"></div>
-                <p class="work_title"></p>
-              </div>
-              <div class="mywork">
-                <div class="media"></div>
-                <p class="work_title"></p>
-              </div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
           <!-- works 끝 -->
@@ -330,6 +381,7 @@
       </div>
     </footer>
     <!-- script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/app.js"></script>
   </body>
