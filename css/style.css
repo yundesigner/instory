@@ -188,7 +188,6 @@ section {
 .join_form form {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .join_form form > div {
   display: flex;
@@ -219,7 +218,10 @@ section {
   border: 1px solid var(--main-color);
   border-radius: 6px;
 }
-
+.join_btn {
+  background-color: var(--main-color);
+  color: #fff;
+}
 .join_form .gender {
   width: 230px;
   display: flex;
@@ -231,12 +233,12 @@ section {
   margin-bottom: 0;
   font-weight: 500;
 }
-
+.member_id input[type="text"],
 .handphone input[type="tel"] {
   width: 140px;
   margin-right: 8px;
 }
-.handphone input[type="button"] {
+.member_id input[type="button"] .handphone input[type="button"] {
   width: 62px;
   height: 28px;
   border: none;
@@ -259,6 +261,7 @@ section {
   background-image: linear-gradient(99deg, #209cff, #68e0cf);
   border: none;
   color: #fff;
+  margin: 0 auto;
 }
 /* content 끝 */
 
