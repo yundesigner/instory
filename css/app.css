@@ -114,6 +114,7 @@ select:focus {
   width: 36px;
   height: 36px;
   background: url(../img/add_btn.png) no-repeat center center / cover;
+  cursor: pointer;
 }
 
 .delete {
@@ -121,4 +122,6 @@ select:focus {
   height: 24px;
   border: none;
   background: url(../img/delete.png) no-repeat center center / cover;
+  margin-left: 8px;
+  cursor: pointer;
 }

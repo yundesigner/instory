@@ -394,6 +394,23 @@ section {
   height: 28px;
 }
 
+.filmography ul {
+  width: 100%;
+  justify-content: space-between;
+}
+.filmography ul li:first-child {
+  margin-left: 16px;
+}
+.filmography ul li:first-child,
+.filmography ul li:nth-child(2),
+.filmography ul li:nth-child(4),
+.filmography ul li:nth-child(5) {
+  width: 10%;
+}
+.filmography ul li:nth-child(3n) {
+  width: 40%;
+}
+
 .filmo_title h1 {
   font-size: 24px;
   font-weight: 700;
@@ -403,19 +420,54 @@ section {
 .filmo_form_title {
   margin: 22px auto 16px;
 }
+
 .filmo {
   display: flex;
   flex-direction: column;
 }
+.filmo_form {
+  margin-bottom: 16px;
+}
+.filmo_form ul {
+  height: 28px;
+  padding: 10px 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+}
+
 .filmo_submit {
-  width: 162px;
+  width: 148px;
   height: 36px;
   padding: 8px 14px;
   border-radius: 18px;
+  border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
   background-color: #fff;
   margin: 24px auto;
+  font-weight: 700;
+  justify-content: space-between;
+  cursor: pointer;
 }
+
+.filmo_submit img {
+  width: 14px;
+}
+
+/* filmo_form input/select css 시작  */
+
+.filmo_form ul li div,
+.filmo_form ul li div select {
+  width: 90%;
+}
+.director,
+.role_title {
+  width: 90%;
+}
+.films_name {
+  width: 95%;
+}
+
 /* ------------staff profile 끝 ------------ */
 
 /* footer */
